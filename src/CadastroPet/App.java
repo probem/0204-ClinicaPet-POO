@@ -14,6 +14,16 @@ public class App {
                  "99999-9999"
          );
 
+         Responsavel pessoa2 = new Responsavel(
+                 "Roger",
+                 "José",
+                 "02092092",
+                 "9328392",
+                 77,
+                 "oi@oi.com",
+                 "40028922"
+         );
+
 
          Pet cachorro = new Pet(
                  "Toddy",
@@ -25,8 +35,19 @@ public class App {
                  Pet.TiposCuidado.Fisioterapia.toString()
          );
 
+         Pet papagaio = new Pet(
+                 "Loro",
+                 "papagaio azul com neon",
+                 "ave",
+                 40,
+                 "laranja",
+                 pessoa2,
+                 Pet.TiposCuidado.Vacina.toString()
+         );
+
          System.out.println(pessoa.verificarMaioridade(pessoa.idade));
          System.out.println(cachorro.retornarDadosPet());
+         System.out.println(papagaio.retornarDadosPet());
 
     }
 }
