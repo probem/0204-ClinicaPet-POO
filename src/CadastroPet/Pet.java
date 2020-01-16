@@ -3,13 +3,13 @@ package CadastroPet;
 import CadastroPet.Responsavel;
 
 public class Pet {
-    String nome;
-    String especie;
-    String raca;
-    int idade;
-    String cor;
-    Responsavel dono;
-    String tipoCuidado;
+    private String nome;
+    private String especie;
+    private String raca;
+    private int idade;
+    private String cor;
+    private Responsavel dono;
+    private String tipoCuidado;
 
     public Pet(String nome, String especie, String raca, int idade, String cor, Responsavel dono, String tipoCuidado) {
         this.nome = nome;

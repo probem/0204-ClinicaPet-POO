@@ -45,7 +45,10 @@ public class App {
                  Pet.TiposCuidado.Vacina.toString()
          );
 
-         System.out.println(pessoa.verificarMaioridade(pessoa.idade));
+         pessoa.setNome("Cleiton");
+         System.out.println(pessoa.getNome());
+
+         System.out.println(pessoa.verificarMaioridade(pessoa.getIdade()));
          System.out.println(cachorro.retornarDadosPet());
          System.out.println(papagaio.retornarDadosPet());
 
