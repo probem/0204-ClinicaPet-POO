@@ -20,4 +20,22 @@ public class Pet {
         this.dono = dono;
         this.tipoCuidado = tipoCuidado;
     }
+
+    public enum TiposCuidado{
+        BanhoETosa,
+        Vacina,
+        Fisioterapia
+    }
+
+    public String retornarDadosPet() {
+        return "Pet{" +
+                "nome='" + nome + '\'' +
+                ", especie='" + especie + '\'' +
+                ", raca='" + raca + '\'' +
+                ", idade=" + idade +
+                ", cor='" + cor + '\'' +
+                ", dono=" + dono.retornarTodosDados() +
+                ", tipoCuidado='" + tipoCuidado + '\'' +
+                '}';
+    }
 }

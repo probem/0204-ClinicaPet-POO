@@ -5,26 +5,28 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
          Responsavel pessoa = new Responsavel(
-                 "Jerfferson",
+                 "Jefferson",
                  "Brito",
                  "05883-260",
                  "550",
-                 23,
+                 20,
                  "jerfferson@mastertech.com.br",
                  "99999-9999"
          );
+
 
          Pet cachorro = new Pet(
                  "Toddy",
                  "Cachorro",
                  "Vira-Lata",
                  24,
-                 "marrom",
+                 "Marrom",
                  pessoa,
-                 "Banho e Tosa"
+                 Pet.TiposCuidado.Fisioterapia.toString()
          );
 
-         System.out.println(cachorro.dono.cep);
+         System.out.println(pessoa.verificarMaioridade(pessoa.idade));
+         System.out.println(cachorro.retornarDadosPet());
 
     }
 }
